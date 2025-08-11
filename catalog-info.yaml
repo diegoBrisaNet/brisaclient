@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
- name: brisacliente
-title: brisacliente
-description: 
-  Customer-facing application that allows you to pay bills, 
-  check your internet connection status, and share Wi-Fi quickly and easily
-tags:
+  name: brisacliente
+  title: brisacliente
+  description: >
+    Customer-facing application that allows you to pay bills,
+    check your internet connection status, and share Wi-Fi quickly and easily
+  tags:
     - Governance
     - Ownership
     - Platform
