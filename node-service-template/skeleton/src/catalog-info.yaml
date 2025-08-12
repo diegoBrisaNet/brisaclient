@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: '{{ cookiecutter.project_slug }}'
+
+spec:
+  type: service
+  lifecycle: experimental
+  owner: 'user:guests'

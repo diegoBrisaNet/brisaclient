@@ -10,7 +10,7 @@ metadata:
     - express
     - web
 spec:
-  owner: user:Estagiarios
+  owner: user:guests
   type: service
   parameters:
     - title: Nome do Projeto
@@ -36,7 +36,7 @@ spec:
       input:
         url: ./skeleton
         values:
-          name: '{{ parameters.name }}'
+          project_name: '{{ parameters.name }}'
           description: '{{ parameters.description }}'
           owner: '{{ parameters.owner }}'   
       copyWithoutRender:
