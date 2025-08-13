@@ -42,7 +42,7 @@ spec:
       name: Buscando o Esqueleto do Projeto
       action: fetch:cookiecutter
       input:
-        url: ./skeleton
+        url: https://github.com/diegoBrisaNet/brisaclient/tree/main/node-service-template/skeleton
         values:
           project_name: '{{ parameters.name }}'
           description: '{{ parameters.description }}'
