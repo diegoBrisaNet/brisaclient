@@ -32,7 +32,7 @@ spec:
   steps:
     - id: fetch-base
       name: Buscando o Esqueleto do Projeto
-      action: fetch:template
+      action: fetch:cookiecutter
       input:
         url: ./skeleton
         values:
