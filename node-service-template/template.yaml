@@ -14,13 +14,16 @@ spec:
   type: service
   parameters:
     - title: Nome do Projeto
-      description: O nome do serviço a ser criado
-      required: true
-      ui:autofocus: true
-    - title: Descrição
-      description: Uma breve descrição do serviço
-      required: true
-      owner:
+      properties:
+        name:
+          type: string
+          description: O nome do projeto a ser criado
+          ui:autofocus: true
+        description:
+          title: Descrição
+          type: string
+          description: Uma breve descrição do serviço
+        owner:
           title: Dono do Projeto
           type: string
           description: O dono do componente.
@@ -28,7 +31,12 @@ spec:
           ui:options:
             allowedKinds: ['Group', 'User']
     - title: Configurações de Repositório
-
+      properties:
+        repoUrl:
+          title: URL do Repositório
+          type: string
+          description: A URL do repositório onde o serviço será criado
+          ui:autofocus: true
   steps:
     - id: fetch-base
       name: Buscando o Esqueleto do Projeto
